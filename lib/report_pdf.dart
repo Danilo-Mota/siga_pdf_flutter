@@ -770,9 +770,9 @@ class _PdfFonts {
   final pw.Font italic;
 
   static Future<_PdfFonts> load() async {
-    final regularData = await rootBundle.load('assets/fonts/Arial.ttf');
-    final boldData = await rootBundle.load('assets/fonts/Arial-Bold.ttf');
-    final italicData = await rootBundle.load('assets/fonts/Arial-Italic.ttf');
+    final regularData = await rootBundle.load('assets/fonts/Arimo-Regular.ttf');
+    final boldData = await rootBundle.load('assets/fonts/Arimo-Bold.ttf');
+    final italicData = await rootBundle.load('assets/fonts/Arimo-Italic.ttf');
 
     return _PdfFonts(
       regular: pw.Font.ttf(regularData),

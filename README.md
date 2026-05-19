@@ -1,16 +1,25 @@
 # siga_pdf_flutter
 
-A new Flutter project.
+Aplicativo Flutter que recria o PDF do anexo SIGA usando a biblioteca `pdf`.
 
-## Getting Started
+## O que tem aqui
 
-This project is a starting point for a Flutter application.
+- preview web com `PdfPreview` para gerar, imprimir e baixar o arquivo
+- composição do PDF em coordenadas fixas para ficar visualmente próxima ao anexo
+- fontes `Arimo` embutidas por serem abertas e compatíveis com as métricas do Arial
 
-A few resources to get you started if this is your first Flutter project:
+## Rodando localmente
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+flutter pub get
+flutter run -d chrome
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Arquivos principais
+
+- `lib/main.dart`: tela com preview e ações de exportação
+- `lib/report_pdf.dart`: montagem completa do documento PDF
+
+## Fonte usada
+
+As fontes em `assets/fonts/Arimo-*.ttf` vêm do projeto oficial Arimo do Google Fonts e a licença está em `assets/fonts/OFL-Arimo.txt`.
